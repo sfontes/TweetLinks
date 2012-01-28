@@ -1,0 +1,10 @@
+h1. TweetLinks
+
+This project provides a script to tweet links from a file to a twitter account, reading the links and posting the title of the link and the link.
+
+h2. Usage
+
+<pre>
+   tweetLinks FILE
+</pre>
+
