@@ -5,6 +5,12 @@ This project provides a script to tweet links from a file to a twitter account, 
 h2. Usage
 
 <pre>
-   tweetLinks FILE
+   Usage: tweetLinks.py [options] filename
+
+   Options:
+     --version             show program's version number and exit
+       -h, --help            show this help message and exit
+         -c FILE, --config-file=FILE
+                                 Read this configuration file not default, oauth.cfg
 </pre>
 
