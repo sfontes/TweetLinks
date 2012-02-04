@@ -1,0 +1,7 @@
+# Configuration file for tweetLinks program
+# Author: Simao Fontes <simaofontes@gmail.com>
+
+CONSUMER_KEY: 'Consumer key obtained from twitter'
+CONSUMER_SECRET: 'Consumer secret obtained from twitter'
+ACCESS_KEY: 'Access key obtained from twitter'
+ACCESS_SECRET: 'Access secret obtained from twitter'
