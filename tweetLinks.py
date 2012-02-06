@@ -14,10 +14,9 @@ import zlib
 from config import Config
 from optparse import OptionParser
 
-<<<<<<< HEAD
 def authenticate_oauth(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET):
     try:
-        print CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET
+        #        print CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET
         auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
         auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
         api = tweepy.API(auth)
@@ -25,12 +24,6 @@ def authenticate_oauth(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET):
     except:
         print "Unexpected error:", sys.exc_info()[0]
         raise
-=======
-def authenticate_oauth():
-    auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-    auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
-    api = tweepy.API(auth)
->>>>>>> 639f7c0e4b08de3365d49bad3d3bd3f9520d3e11
 
 def load_configuration(config_file):
     try:
@@ -104,7 +97,7 @@ def main():
         parser.error("wrong number of arguments")
 
     CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET = load_configuration(options.config_file)
-    print CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET
+    #print CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET
     api = authenticate_oauth(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET)
     #print api.getstate()
     read_file(args[0], api)
