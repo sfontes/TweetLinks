@@ -13,21 +13,6 @@ import zlib
 
 from config import Config
 from optparse import OptionParser
-#tinyurl.create_one('http://google.com/')
-
-#CONSUMER_KEY = 'DgRSSKfbfe5ORNyQ3PJy5g'
-#CONSUMER_SECRET = 'Mhq5oqKtw81Bd8WZEVA8Fw5L7ddXiOR3LUgL65w21M'
-#ACCESS_KEY = '198543195-6nk9wqcy9ITd0cw22mvcqlXjrXUgmRtO5qQZfhZQ'
-#ACCESS_SECRET = 'lmHN8fZsPEkJcEKXOJWminMWftFt54G16zYE2HFL2w4'
-
-# Get title from page
-#soup = BeautifulSoup.BeautifulSoup(urllib.urlopen("https://www.google.com"))
-#print soup.title.string
-
-#f = open(sys.argv[1], 'r')
-#auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-#auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
-#api = tweepy.API(auth)
 
 def authenticate_oauth():
     auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
